@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Palassis | STEM Tutor | Charlotte, NC</title>
-    <meta name="description" content="Expert K-12 STEM tutoring in Math, Science, and Coding. Serving Charlotte, NC and online. Contact Luke Palassis, summa cum laude CIS graduate.">
+    <title>Golden Tutoring | STEM Tutoring | Columbia, SC</title>
+    <meta name="description" content="Golden Tutoring provides personalized STEM tutoring in Math, Statistics, Computer Science, and Science for students in Columbia, SC and online.">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        :root {
-            --blue: #3A86FF;
-            --pink: #FF006E;
-            --yellow: #FFBE0B;
-            --mint: #06D6A0;
-            --dark: #14142B;
-            --mid: #6B6B8A;
-            --light: #F4F6FF;
-            --white: #FFFFFF;
-            --card-radius: 16px;
-            --section-pad: 88px 24px;
-        }
+        /* CHANGED - GOLD THEME */
+:root {
+    --blue: #D4AF37;      /* Primary Gold */
+    --pink: #B8860B;      /* Dark Gold */
+    --yellow: #FFD700;    /* Bright Gold */
+    --mint: #F5DEB3;      /* Light Accent */
+    --dark: #1E1A12;      /* Rich Dark Brown */
+    --mid: #6B5A2A;
+    --light: #FFF9E8;
+    --white: #FFFFFF;
+
+    --card-radius: 16px;
+    --section-pad: 88px 24px;
+}
 
         html { scroll-behavior: smooth; }
 
@@ -49,6 +51,18 @@
             color: var(--dark); text-decoration: none;
         }
         .nav-logo span { color: var(--blue); }
+        
+        .nav-logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .founder-text {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--mid);
+        }
 
         .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
         .nav-links a {
@@ -178,8 +192,7 @@
         }
 
         .about-visual {
-            background: linear-gradient(135deg, #3A86FF 0%, #9B5DE5 50%, #FF006E 100%);
-            border-radius: 24px; aspect-ratio: 4/5;
+            
             display: flex; flex-direction: column;
             align-items: center; justify-content: center; gap: 14px;
         }
@@ -380,6 +393,14 @@
             border-radius: 12px; font-weight: 500; font-size: 15px; line-height: 1.6;
         }
 
+        .about-photo {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+            border: 4px solid #D4AF37;
+            box-shadow: 0 15px 40px rgba(0,0,0,.15);
+        }
+
         /* FOOTER */
         footer {
             background: var(--dark); padding: 48px 24px;
@@ -413,7 +434,11 @@
 
 <!-- NAV -->
 <nav>
-    <a class="nav-logo" href="#home">Luke <span>Palassis</span></a>
+    <!-- CHANGED -->
+<a class="nav-logo" href="#home">
+    <div>Golden <span>Tutoring</span></div>
+    <small class="founder-text">Founded by Luke Palassis</small>
+</a>
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -436,13 +461,14 @@
 <!-- HERO -->
 <section class="hero" id="home">
     <div class="hero-content">
-        <div class="hero-badge">⭐ Summa Cum Laude · Charlotte, NC</div>
+        <div class="hero-badge">⭐ Founded by Luke Palassis</div>
         <h1>
-            Unlock Your <span class="accent-blue">STEM</span><br>
-            Potential With<br>
-            <span class="accent-pink">Expert</span> Guidance
+            Build Confidence In
+            <span class="accent-blue">STEM</span><br>
+            With
+            <span class="accent-blue">Golden Tutoring</span>
         </h1>
-        <p>K–12 tutoring in Math, Science, and Coding — available online and in-person in Charlotte, NC. Real credentials. Real results.</p>
+        <p>K–12 tutoring in Math, Science, and Coding — available online and in-person in Columbia, SC. Real credentials. Real results.</p>
         <div class="hero-btns">
             <a href="#contact" class="btn-primary">Book a Free Intro Call</a>
             <a href="#services" class="btn-secondary">See What I Offer</a>
@@ -461,10 +487,7 @@
             <div class="stat-number">3</div>
             <div class="stat-label">STEM Subjects</div>
         </div>
-        <div>
-            <div class="stat-number">Summa</div>
-            <div class="stat-label">Cum Laude Graduate</div>
-        </div>
+        
         <div>
             <div class="stat-number">Online</div>
             <div class="stat-label">& In-Person Available</div>
@@ -477,20 +500,23 @@
     <div class="section-inner">
         <div class="about-grid">
             <div class="about-visual">
-                <div class="avatar-circle">LP</div>
-                <p>Replace with your photo</p>
+                
+                <img
+                    src="images/headshot.jpg"
+                    alt="Luke Palassis, Founder of Golden Tutoring"
+                    class="about-photo">
             </div>
             <div class="about-text">
-                <p class="section-label">About Luke</p>
+                <p class="section-label">About Golden Tutoring</p>
                 <h2 class="section-title">Passionate About STEM. Dedicated to Your Student.</h2>
                 <p>I'm Luke Palassis, a summa cum laude Computer Information Systems graduate and lifelong academic achiever — I also finished at the top of my high school class.</p>
                 <p>That journey taught me more than just the material. It showed me <em>how</em> to learn hard things — how to break down a tough concept until it clicks, and how to stay motivated when the work gets challenging.</p>
-                <p>I offer one-on-one K–12 STEM tutoring in math, science, and coding, both online and in-person in the Charlotte, NC area. Every session is built around your student — their pace, their learning style, and their goals.</p>
+                <p>I offer one-on-one K–12 STEM tutoring in math, science, and coding, both online and in-person in the Columbia, SC area. Every session is built around your student — their pace, their learning style, and their goals.</p>
                 <div class="credential-pills">
                     <span class="pill pill-blue">Summa Cum Laude</span>
                     <span class="pill pill-pink">Computer Information Systems</span>
                     <span class="pill pill-mint">Top of High School Class</span>
-                    <span class="pill pill-yellow">Charlotte, NC</span>
+                    <span class="pill pill-yellow">Columbia, SC</span>
                 </div>
             </div>
         </div>
@@ -607,7 +633,7 @@
             <div class="why-card">
                 <div class="why-icon">📍</div>
                 <h3>Flexible &amp; Accessible</h3>
-                <p>Available in-person in Charlotte, NC or online via Zoom or Google Meet — whichever works best for your family.</p>
+                <p>Available in-person in Columbia, SC or online via Zoom or Google Meet — whichever works best for your family.</p>
             </div>
         </div>
     </div>
@@ -621,18 +647,18 @@
                 <p class="section-label">Get in Touch</p>
                 <h2 class="section-title">Let's Talk About Your Student</h2>
                 <p>Pricing is based on grade level and session frequency. Reach out and I'll walk you through all the details — no pressure, no commitment required.</p>
-                <a href="mailto:your@email.com" class="contact-method">
+                <a href="mailto:goldentutoringsc@gmail.com" class="contact-method">
                     <div class="contact-icon ci-email">📧</div>
                     <div>
                         <div class="contact-method-label">Email</div>
-                        <div class="contact-method-value">your@email.com</div>
+                        <div class="contact-method-value">goldentutoringsc@gmail.com</div>
                     </div>
                 </a>
                 <a href="tel:+10000000000" class="contact-method">
                     <div class="contact-icon ci-phone">📱</div>
                     <div>
                         <div class="contact-method-label">Phone / Text</div>
-                        <div class="contact-method-value">(XXX) XXX-XXXX</div>
+                        <div class="contact-method-value">(864) 729-0107</div>
                     </div>
                 </a>
             </div>
@@ -696,15 +722,15 @@
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer-logo">Luke <span>Palassis</span></div>
-    <p class="footer-tagline">K–12 STEM Tutor · Charlotte, NC · Online &amp; In-Person</p>
+    <div class="footer-logo">Golden <span>Tutoring</span></div>
+    <p class="footer-tagline">K–12 STEM Tutor · Columbia, SC · In-Person &amp; Online</p>
     <div class="footer-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#contact">Contact</a>
     </div>
-    <p class="footer-copy">© 2026 Luke Palassis. All rights reserved.</p>
+    <p class="footer-copy">© 2026 Golden Tutoring. All rights reserved.</p>
 </footer>
 
 <script>
